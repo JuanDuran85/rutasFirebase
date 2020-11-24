@@ -47,8 +47,6 @@ router.beforeEach((to,from,next)=>{
 
   if (registroRequerido && !usuario) {
       next('login');
-  } else if(usuario && !registroRequerido) {
-      next('usuarios');
   } else {
     next()  
   }

@@ -47,7 +47,7 @@ export default {
             console.log(resp.user.metadata.lastSignInTime);
             console.log(resp.user.refreshToken);
             console.log(resp.user.uid);
-            /* this.$router.push('/'); */
+            this.$router.push('/usuarios');
           })
           .catch(error => {
             console.error(error.code);
